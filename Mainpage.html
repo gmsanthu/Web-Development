@@ -88,13 +88,13 @@
   <tr>
     <th width="150" bgcolor="#8E44AD">Saturday 17<sup>th</sup>July</th>
     <td>Youth</td>
-
-  </tr>
+ </tr>
 </table>
 <br/>
+
 <h2>Comments</h2>
 <p>What did you think about our service?</p>
-<textarea name="comments" cols="30" rows="4">Enter your comments...</textarea>
+<textarea name="comments" cols="30" rows="4" placeholder="Enter your comments.."></textarea>
 <h2>Please select your favourite festival</h2>
 <h3><input type="checkbox" name="favourite" value="Sundance"/>Sundance Festival
 <h3><input type="checkbox" name="favourite" value="Tropical"/>Tropical Festival</h3></h3>
@@ -105,24 +105,50 @@
  <h2>"Will you visit next year"</h2>
  <h3><input type="radio" name="radio" value="Yes"/>Yes</h3>
  <h3><input type="radio" name="radio" value="No"/>No</h3>
- <h2>"What are the festivals you have attended this year?"</h2>
+ <form action="file:///C:/Users/rsant/Documents/My%20Project/Mainpage.html">
+  <h3>Date of the festivals attended:</h3>
+  <label for="festival date"></label><input type="date" name="Date">
+  <input type="submit" name="Submit">
+  <h3>Age:</h3>
+  <label>Age:<input type="text" name="Age"></label><br/>
+  Gender:
+  <input type="radio" name="age" value="f">
+  <label for="Female">Female</label>
+  <input type="radio" name="age" value="m">
+  <label for="Male">Male</label>
+  <fieldset>Personal Information:
+  <legend>Contact Details</legend>
+  <label>Email</label><input type="text" name="Personal email">
+  <label>Mobile</label><input type="text" name="Mobile Personal">
+  <label>Telephone</label><input type="text" name="Personal Telephone">
+  <center><input type="submit" name="Save"></center>
+  </fieldset>
+  <h2>What are the festivals you have attended this year?</h2>
  <select name="attended" multiple="multiple">
   <option value="Sundance Festival">Sundance</option>
    <option value="Tropical Festival">Tropical</option>
    <option value="Ice cream Festival">Ice cream</option>
    <option value="Food Festival">Food</option>
    <option value="Dress Festival">Dress</option>
-  </select>
+  </select></form>
    <p><i>To select multiple options please click (ctrl + click)</i></p> 
+   <form action="file:///C:/Users/rsant/Documents/My%20Project/Mainpage.html">
    <h2>Please upload your happy moments here....</h2>
    <input type=file value="image"/>
-   <input type="submit" value="Upload">
+   <input type="submit" value="Upload"><br/>
+   <button><img src="image/Add.png" width="30" height="30"></button>
+   </form>
    <h4>Subscribe us to get festival notifications:</h4>
-   <p><input name="email" type="text">
-   <input type="image" src="image/subscribe.jfif" width="100" height="30"></p>
-<p><i>Would you like to add another email address</i></p>
-<button><img src="image/Add.png" width="30" height="30">
-</button>
+   <form action="file:///C:/Users/rsant/Documents/My%20Project/Mainpage.html">
+   <p><strong>Please enter an email id:</strong><input name="email" type="email" required="required"></form>
+   <input type="image" src="image/subscribe.jfif" Type="submit" width="100" height="30"></p>
+<input type="hidden" name="Bookmarks" value="Email Address">
+<h3>Websites:</h3>
+<input type="url" name="Websites">
+<input type="submit" name="Submit">
+<h3>Search the festivals you want to know about...</h3>
+<input type="search" name="search" placeholder="Enter the keyword">
+<input type="submit" name="Submit">
 <center><strong><a href="#top">Top</a></strong></center>
  </body>
  </html>
